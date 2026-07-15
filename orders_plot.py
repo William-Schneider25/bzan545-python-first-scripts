@@ -1,3 +1,4 @@
+# Loading needed packages
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -12,3 +13,7 @@ print(orders.shape)
 
 sns.scatterplot(x="quantity", y="order_total", hue="category", data=orders)
 plt.show()
+
+
+27500 // 24
+27500%24

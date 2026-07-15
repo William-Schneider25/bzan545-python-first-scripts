@@ -33,7 +33,8 @@ print(sentence)
 # What's a case where you might want .lower() or .upper()?
 
 # What's a case where you might want .strip()?
-
+my_string = "        will"
+my_string.strip()
 # What's a case where you might want .split()?
 
 # A list is an ordered collection of values.
@@ -43,7 +44,9 @@ print(products)
 # Python starts counting at 0.
 # Indexing:
 # * products[0] is the first item
+products[0]
 # * products[1] is the second item
+products[-1]
 # * products[-1] is the last item
 #
 # Pull a few products here:
@@ -57,9 +60,9 @@ print(products)
 # * list[start:stop:step] can skip values
 #
 # Type a few indexing/slicing examples here:
-
+products[0:3]
 # What do you think products[1:3] will return?
-
+products[1:3]
 # What do you think products[:2] will return?
 
 # What do you think products[::2] will return?
@@ -71,9 +74,11 @@ print(products)
 # * assigning by index replaces an item
 
 # Try adding one product:
-
-# Try adding several products:
-
+products.append('socks')
+# Try adding several products:\
+new_products=['shoes']
+products.extend(new_products)
+print(products)
 # Try combining two lists:
 apparel = ["hoodie", "cap"]
 home = ["mug", "blanket"]
@@ -128,22 +133,25 @@ student = {
 }
 
 # Type a few dictionary examples here:
-
+student['name']
 # Pull the student's name:
 
 # Pull the student's grades:
-
+student["grades"]
 # Pull the student's first grade:
-
+student["grades"][1]
 # Pull the student's last grade:
-
+student["grades"][-1]
 # Calculate the student's average grade:
-
+sum(student['grades'])/len(student['grades'])
 # Explore the dictionary:
 # * .keys()
+student.keys()
 # * .values()
+student.values()
 # * .items()
-
+student.items()
+''
 # Dictionaries can change.
 # * assigning to a new key adds a key-value pair
 # * assigning to an existing key replaces that value
@@ -182,8 +190,9 @@ order = {
 }
 
 # Calculate order_total using the order dictionary:
-
-
+order_total = order['quantity']*order['unit_price']
+order_total
+acp= "arroz con polo"
 # Practice prompts
 #
 # 1. Add a new product to the products list with products.append(...).

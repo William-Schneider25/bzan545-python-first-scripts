@@ -35,10 +35,18 @@ print(cost)
 # * square root with ** 0.5
 #
 # Type a few calculator examples here:
-
+1+2
 # What's a case where you might want to use //?
+10//3
+
 
 # What's a case where you might want to use %?
+10 % 3
+
+10**2
+
+10**0.5
+import math
 
 # Types are the kind of value something is.
 # Common first data types:
@@ -57,7 +65,8 @@ print(type(product))
 print(type(is_available))
 
 # What data types might you already know of from other programming languages?
-
+x_tuple = (1,2)
+x_list = [1,2]
 # Operators can behave differently with different types.
 # * number + number does math
 # * string + string glues strings together
@@ -65,6 +74,9 @@ print(type(is_available))
 #
 # Type a few operator examples here:
 
+"Rocky" + "Top"
+
+"both lose"* 10
 
 # Pizza calculator (very important work in progress)
 n_people = 3
@@ -76,22 +88,24 @@ slices_per_pizza = 8
 # ?????
 # ?????
 
-print(remaining_slices)
+print(remaining.slices)
 
 # Practice word problems (too many for us to do all together....)
 #
 # 1. A tailgate has 10 people. Each person brings a 6 pack of soda.
 #    At the end, 8 sodas are left. How many did each person drink on average?
-#
+52 // 10
 # 2. A warehouse has 2,000 items. If 49 percent are sold and the rest are
 #    packed into boxes of 12, how many full boxes are there and how many
 #    items are left unpacked?
-#
+Items_left = 2000 - (2000 * .49)
+Items_left // 12 
+Items_left % 12 
 # 3. A student buys 3 hoodies at $48 each and 2 mugs at $16 each.
 #    Sales tax is 9.25 percent. What is the final total?
 #
 # 4. A batch job processed 18,725 rows in 35 minutes.
 #    How many rows did it process per minute on average?
-#
+18725 / 35
 # 5. A truck can carry 42 boxes. You need to ship 389 boxes.
 #    How many full trucks are needed, and how many boxes are on the last truck?
